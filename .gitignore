@@ -1,0 +1,33 @@
+# ---- 运行环境（体积大、跟机器绑定，绝不入库）----
+.venv/
+venv/
+env/
+
+# ---- 打包产物与缓存 ----
+build/
+dist/
+.nuitka-cache/
+*.build/
+*.onefile-build/
+*.dist/
+*.ico
+
+# ---- Python 编译缓存 ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- 运行时生成的本机状态（标定模板、设置、日志）----
+calib/
+logs/
+tools/_tmp_calib/
+tools/_ref_data/
+*.npy
+*.calib.json
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini

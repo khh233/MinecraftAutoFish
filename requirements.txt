@@ -1,0 +1,12 @@
+# autofish 依赖（自包含版，装在本文件夹的 .venv 里）
+# 安装:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+# 或直接双击 run.bat 选 [1]
+#
+# 用 Python 3.11/3.12。3.13+ 没有 scipy 预编译包，会退化成源码编译。
+
+numpy>=1.24
+scipy>=1.10            # 可选：只用高通滤波；装不上会自动降级成 numpy 实现
+soundcard>=0.4.3       # 回环采集（必需）
+pydirectinput>=1.0.4   # 右键收杆（必需）
+pygetwindow>=0.0.9     # --window 选窗口（可选）
+psutil>=5.9            # 由窗口句柄反查进程（可选）

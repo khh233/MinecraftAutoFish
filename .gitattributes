@@ -1,0 +1,11 @@
+# .bat 必须保持 GBK + CRLF：cmd.exe 逐字节解析，改成 UTF-8 或 LF 会把它当命令执行
+# （见 README「已知要点」第 6 条）。标成 -text，让 git 不要动它的换行。
+*.bat -text
+
+# 二进制资源
+*.ogg  binary
+*.png  binary
+*.ico  binary
+*.npy  binary
+*.pyd  binary
+*.dll  binary
